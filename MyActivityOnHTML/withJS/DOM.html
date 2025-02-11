@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom js</title>
+</head>
+<body>
+    <!-- 1 replace by id -->
+    <p id="zero">index 0</p>
+    <!-- 2 replace and some more by id -->
+    <p id="one">index 1</p>
+    <!-- 3 the number of this tag-1 as index start 0  -->
+     <p>index 2</p>
+     <p id="three"></p>
+     <!-- 4 in tag index number compulsary-->
+      <div id="part">
+        <h1> part index 0 </h1>
+        <h2>part index 1</h2>
+        <h3>part index 2</h3>
+        <h4 id="headings"></h4>
+      </div>
+      <!-- 5 in class index number compulsory -->
+       <p class="same">index 4</p>
+       <p class="same"> index 5</p>
+       <p class="same">index 6</p>
+       <p id="seven"></p>
+       <p id="eight"></p>
+
+       <form action=""></form>
+
+    <script>
+        // 1
+        document.getElementById("zero").innerHTML=("zero index replaced 0!");
+
+        // 2
+        const hold=document.getElementById("one");
+        document.getElementById("one").innerHTML=("one index replaced 1! " + hold.innerHTML +" ! and some axtrass");
+        
+        // 3   stor[2] it is index of used tag thats work on 
+        const stor=document.getElementsByTagName("p");
+        document.getElementById("three").innerHTML=("paragraph "+stor[2].innerHTML)
+        
+        // 4
+        const head=document.getElementById("part");
+        const shead=head.getElementsByTagName("h1");
+        document.getElementById("headings").innerHTML=("this is copied index part zero in h4 ! "+shead[0].innerHTML +" ! and some other.")
+
+        // 5
+        const para=document.getElementsByClassName("same");
+        document.getElementById("seven").innerHTML=("this is copied index from ! "+para[0].innerHTML +para[1].innerHTML);
+        // 5.1 query/class selecter in qoutation same as for class
+        const a= document.querySelectorAll("p.same");
+        document.getElementById("eight").innerHTML=("Query Selectfrom !!  "+a[2].innerHTML)
+
+
+
+    </script>
+</body>
+</html>

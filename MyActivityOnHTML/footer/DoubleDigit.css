@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.outerbox{
+    background-color:blueviolet;
+    margin: 1cm;
+    padding: .5cm;
+    height: 75%;
+    width: 70%;
+}
+.secondbox{
+    background-color:cornflowerblue;
+    padding: .5cm;
+    height: 100%;
+}
+.mianbox{
+    background-color:cadetblue;
+    height:100%;
+}
+.mianbox .heading{
+    padding: .5cm;
+    color: white;
+    justify-items: center;
+}
+.mianbox .centretap{
+    height: 1.4cm;
+    background-color: rgb(204, 40, 40);
+    align-content:center;
+    padding-left: 7cm;
+}
+.mianbox input{
+    width: 4cm;
+    height: .7cm;
+    border: none;
+    padding-left: .2cm;
+}
+.mianbox button{
+    width: 3cm;
+    height: .7cm;
+}
+.mianbox .bottompart{
+    margin-top: 1cm;
+    margin-left:2cm;
+    display: flex;
+    gap: 2cm;
+}
+.mianbox .bottompart h3{
+    margin-bottom: .5cm;
+    color: crimson;
+}
+.mianbox .media{
+    padding-left: 5.6cm;
+    padding-top: 1cm;
+}
+.mianbox .media a{
+    padding-left: 1cm;
+}

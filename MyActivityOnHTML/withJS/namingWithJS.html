@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Enter a Number">
+
+    <button  type="button" onclick="squar()">squar</button>
+    
+    <button type="button" onclick="cube()">cube</button><br><br><br>
+ 
+    <input type="text" name="" id="name" placeholder="Enter your name">
+    <button type="button" onclick="showMyName()">Check your name</button>
+    <button onclick="ChangCase"> Click me to Change Case </button>
+
+    <p id="Check">Your name is : </p>
+    <p id="toCheck">check it</p>
+    <p id="ChangCase">Chang Case</p>
+<script>
+        function squar()
+        {
+            var squ=document.getElementById("num").value;
+            if(squ!=0){           
+                document.write("Square of "+squ + " = " +squ*squ);
+                for(var i=1; i<=10; i++){
+                    document.write("<br>" +squ +" x " +i +" = " +squ*i);
+                }
+            }
+            else   
+                alert("Please enter a number.")
+        }
+        function cube()
+        {
+            var cub=document.getElementById("num").value;
+            if(cub!=0){
+                document.write("Cube of "+cub +" = "+cub*cub*cub);
+                var i=1;
+                 while(i<=10){
+                    document.write("<br>" +cub +" x " +i +" = " +cub*i);
+                    i++;          
+                }
+            }
+            else
+                alert("Please enter a number."); 
+        }  
+        function showMyName(){
+            document.getElementById("Check").innerHTML=document.getElementById("name").value;
+            document.getElementById("toCheck").innerHTML=("This is your name.");
+        }
+        
+        function ChangCase(){
+            const name=document.getElementById("name");
+            name.value = name.value.toUpperCase();
+        }
+
+</script> 
+
+
+</body>
+</html>

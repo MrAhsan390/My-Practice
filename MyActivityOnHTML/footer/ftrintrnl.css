@@ -1,0 +1,113 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.fullfooter{
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 0 1cm;
+    width: 90%;
+}
+.fullfooter .mainfooter{
+    background-color: aliceblue;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.fullfooter .mainfooter a{
+    text-decoration: none;
+}
+
+                        /* Footer Left Side */
+.fullfooter .mainfooter .lfooter{
+    padding: 10px;
+    width: 70%;
+}
+                  /* Footer Left Side Top */
+.fullfooter .mainfooter .lfooter .lftop{
+    display: flex;
+    margin: 10px 20px;
+}
+.fullfooter .mainfooter .lfooter .lftop li{
+    list-style: none;
+    height: 30px;
+    width: 3cm;
+}
+                    /* Footer Left Side Middle */
+.fullfooter .mainfooter .lfooter .lfmiddle{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.fullfooter .mainfooter .lfooter .lfmiddle ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px 40px;
+    text-align: center;
+}
+                       /* Footer Left Side Bottom */
+.fullfooter .mainfooter .lfooter .lfbottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+                      /* Footer Right Side */
+.fullfooter .mainfooter .rfooter{
+    padding:0 1cm ;
+}
+.fullfooter .mainfooter .rfooter div{
+    padding-bottom: 20px;
+}
+                   /* Footer Right Side Top*/
+.fullfooter .mainfooter .rfooter .rftop ul{
+    /* background-color: red; */
+    list-style: none;
+}
+.fullfooter .mainfooter .rfooter .rftop .heading{
+    background-color: rgb(247, 62, 62);
+    display: flex;
+    gap: 1cm;
+    padding: 10px 20px;
+    color: white;
+}
+.fullfooter .mainfooter .rfooter .rftop .information1{
+    padding-top: 10px;
+}
+                      /* Footer Left Side Middle */
+.fullfooter .mainfooter .rfooter .rfmiddle{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid rgb(184, 181, 178);
+    border-radius: 20px;
+}
+.fullfooter .mainfooter .rfooter .rfmiddle input{
+    height: .7cm;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+.fullfooter .mainfooter .rfooter .rfmiddle button{
+    background-color:  rgb(247, 62, 62);
+    padding: 4px;
+    width: 2cm;
+    border: none;
+    border-radius: 14px;
+    color:white;
+}
+                        /* Footer Left Side Bottom */
+.fullfooter .mainfooter .rfooter .rfbottom ul{
+    display: flex;
+    gap: 1cm;
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+
+}

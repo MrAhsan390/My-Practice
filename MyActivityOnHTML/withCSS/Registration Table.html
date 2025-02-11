@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Table</title>
+</head>
+<body>
+    <fieldset style="width: 30%;">
+        <legend style="text-align: center; ">Registeration Form</legend>
+        
+    <form action="Register" >
+    <table style="height: auto;">
+        <tr>
+            <td><label for="fname">First Name</label></td>          
+            <td><input type="text" name="fname" id="First Name" placeholder="Enter First Name"></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" name="lname" id="Last Name"placeholder="Enter Last Name"></td>
+        </tr>
+        <tr>
+            <td><label for="uname">User Name</label></td>
+            <td><input type="text" name="uname" id="User Name" placeholder="Enter User Name"></td>
+        </tr>
+        <tr>
+            <td>Select Gender</td>
+            <td>
+                <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Shemale">Shemale</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+                <input type="password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="c.p">Confirm Password</label></td>
+            <td><input type="password" name="c.p" id="Confirm Password"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="Email"></td>
+        </tr>
+        <tr>
+            <td><label for="contect">Phone</label></td>
+            <td><input type="text" name="contact" id="Phone" placeholder="03000000000"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea name="address" id="Address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="district">Select Your District</label></td>
+            <td>
+                <select name="district" id="District">
+                    <option value="district">Vehari</option>
+                    <option value="district">Multan</option>
+                    <option value="district">Melsi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="button" value="Register"></td>
+        </tr>
+        </table>
+    </form>
+</fieldset>
+
+
+
+
+
+</body>
+</html>
